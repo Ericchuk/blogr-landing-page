@@ -267,6 +267,19 @@ footer h5{
 @media screen and (min-width:400px) {
     .purple-like{
         background-position: 40% -260px;
+        padding:250px 20px 100px;
+    }
+}
+
+@media screen and (min-width:500px){
+    .purple-like{
+        padding:320px 20px 100px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .purple-like{
+        padding:430px 20px 100px;
     }
 }
 
