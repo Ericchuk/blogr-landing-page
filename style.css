@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@700;900&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@400;600;700&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono:wght@700&family=Spartan:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+body{
+    background-color:  hsl(220, 7%, 92%);
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.head{
+    background-image:url(images/bg-pattern-intro-mobile.svg),linear-gradient( 160deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%) );;
+    background-repeat: no-repeat;
+    background-size:370%, 100%;
+    background-position:40% 25%;
+    padding:30px 20px 170px;
+    position: relative;
+    border-radius:0 0 0 80px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0 40px;
+}
+
+.images .close{
+    display: none;
+}
+
+/* HAMBURGER REGION */
+.hamburger-content{
+    background-color:#fff;
+    text-align: center;
+    width:90%;
+    padding:40px 20px 20px;
+    border-radius: 5px;
+    color:hsl(207, 13%, 34%);
+    position: absolute;
+    visibility: hidden;
+}
+
+.hamburger-content h4{
+    margin:10px 0 20px;
+    font-size:20px;
+}
+
+/*  */
+
+.hamburger-content h5:hover{
+    font-size: 19px;
+    transition: font-size 2s;
+}
+
+.hamburger-content .connect .content{
+    display: block;
+}
+
+
+
+.arrow{
+    margin:0 0 0 10px;
+    transform: rotate(0deg);
+    transition: transform 2s;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+h5{
+    cursor: pointer;
+}
+
+.arrowlight{
+    display: none;
+}
+
+.hamburger-content .connect .arrow{
+    /* transform: rotate(-180deg); */
+}
+
+.hamburger-content  .content{
+    display: none;
+    padding:20px;
+    background-color: hsla(237, 23%, 32%, 0.171);
+    margin:10px 0 20px;
+    font-size:20px;
+    line-height: 2.5rem;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+aside{
+    padding:20px;
+}
+
+aside h6{
+    font-size:18px;
+    margin:5px 0 10px;
+}
+
+
+aside .padding{
+    background-image:linear-gradient( 90deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%) );
+    padding:15px 20px;
+    margin:0 40px;
+    border-radius:50px;
+    color:#fff;
+}
+
+aside .padding:hover{
+    background-color: hsl(353, 100%, 62%);
+    color:#fff;
+    transition: all 2s;
+}
+
+
+/* HEAD TEXT CONTENT */
+.headerText{
+    text-align: center;
+    color:#fff;
+}
+h2{
+    font-size:35px;
+    margin:80px 0px 30px;
+}
+
+.headerText p{
+    font-size:20px;
+    margin:10px 0 40px;
+}
+
+.headerText button{
+    padding:15px 20px;
+    margin:0 5px;
+    border-radius:50px;
+    outline:none;
+    border:none;
+    font-size:15px;
+    font-weight: 700;
+    color:#fff;
+    border:1px solid white;
+}
+
+.headerText .start{
+    color:hsl(353, 100%, 62%);
+}
+
+.headerText .learn{
+    background-color: transparent;
+    border:1px solid white;
+}
+
+.headerText .start:hover{
+    background-color:hsl(353, 100%, 62%);
+    color:#fff;
+    border:1px solid hsl(353, 100%, 62%);
+    transition: all 2s;
+}
+
+ .headerText .learn:hover{
+    background-color:#fff;
+    color:hsl(353, 100%, 62%);
+    transition: all 2s;
+}
+
+/* PRODUCTS */
+
+.container{
+    text-align: center;
+    color: hsl(236, 34%, 35%);
+    padding:100px 40px;
+    position: relative;
+    z-index: -1;
+}
+
+.container img{
+    width:100%;
+}
+
+.container .pad{
+    padding:20px 20px 40px;
+}
+
+.container h3{
+    padding:20px 20px 20px;
+    font-size:25px;
+}
+
+.container p{
+    font-size:17px;
+    margin:10px 0 10px;
+    line-height: 1.8rem;
+}
+
+.container .phone{
+    position:absolute;
+    left:0;
+    top:-200px;
+}
+
+.desklaptop,
+.deskeditor{
+    display: none;
+}
+
+.purple-like{
+    padding:150px 20px 100px;
+    background-color:  hsl(237, 17%, 21%);
+    color:#fff;
+    position: relative;
+    margin:150px 0 0;
+    background-image:url(images/bg-pattern-circles.svg) ;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position:40% -200px;
+    border-radius:0 0 0 80px;
+}
+
+.purple-like h3{
+    font-size:40px;
+    padding:70px 0 0;
+}
+
+.purple-like p{
+    font-size:20px;
+}
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    color:hsl(240, 2%, 79%);
+    padding:50px 20px 30px;
+    text-align: center;
+    margin:40px 0 0;
+}
+
+footer img{
+    margin:10px 0 30px;
+}
+
+footer h4{
+    margin:20px 0 30px;
+    font-size:20px;
+}
+
+footer h5{
+    line-height: 1.8rem;
+    font-size:15px;
+}
+
+.footer{
+    padding:20px;
+    background-color: hsl(240, 10%, 16%);
+}
+
+@media screen and (min-width:400px) {
+    .purple-like{
+        background-position: 40% -260px;
+    }
+}
+
+@media screen and (min-width:700px){
+    .head{
+        background-image:url(images/bg-pattern-intro-desktop.svg),linear-gradient( 160deg, hsl(13, 100%, 72%),hsla(353, 100%, 62%, 0.801) );;
+        background-repeat: no-repeat;
+        background-size:250%;
+        background-position:34% 50%;
+        padding:30px 20px;
+    }
+
+    .hamburger,
+    .close{
+        display: none;
+    }
+
+    .head-content{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger-content{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        visibility: visible;
+        position: relative;
+        top:-5px;
+        left:0px;
+        width:auto;
+        background-color: transparent;
+        color:#fff;
+        margin:0;
+        padding:0;
+    }
+    
+    .hamburger-content h4{
+        margin:0 0 0 20px;
+    }
+    .hamburger-content .content{
+        position: absolute;
+        background-color: #fff;
+        color:#000;
+    }
+    
+    .hamburger-content .connect .content{
+        display: none;
+    }
+
+    .hamburger-content .company .content{
+        padding:20px 40px;
+    }
+
+    aside{
+        display: flex;
+        align-items: center;
+        margin:0 0 0 70px;
+        padding:0;
+    }
+
+    aside .padding{
+        margin:0 20px;
+        background-image:none;
+        background-color: #fff;
+        color:hsl(353, 100%, 62%);
+    }
+
+    hr{
+        visibility: hidden;
+    }
+    
+    .arrow{
+        display: none;
+    }
+
+    .arrowlight{
+        display: block;
+        transform: rotate(0deg);
+        transition: transform 2s;
+    }
+
+    h4 img{
+        margin:0 0 0 5px;
+    }
+
+    .container h3{
+        font-size:45px;
+        margin:20px 0 30px;
+    }
+
+    .container p{
+        font-size:28px;
+        line-height: 2.5rem;
+    }
+
+    .purple-like{
+        padding:500px 40px 90px ;
+        background-position: 40% -350px;
+    }
+    .container .phone{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .head{
+        padding:30px 20px 70px 70px;
+        margin:0;
+    }
+    
+    .hamburger-content{
+        left:-3%;
+    }
+
+    aside{
+        margin:0 0 0 250px;
+    }
+
+    /* .container{
+        overflow-x: hidden;
+    } */
+
+    .container .containerflex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border:2px solid black; */
+    }   
+
+    .container .containerflex-edit{
+        flex-direction: row-reverse;
+        position: relative;
+    }
+
+    .container .containerflex section{
+        width:400px;
+        position: relative;
+        left: -260px;
+        text-align: left;
+    }
+
+    .container .containerflex .deskeditor{
+        position: absolute;
+        right:-250px;
+        overflow-x: none;
+    }
+
+    .laptop,
+    .editor{
+        display: none;
+    }
+
+    .deskeditor,
+    .desklaptop{
+        display: block;
+    }
+
+    .container img{
+        width:75%;
+        /* border:2px solid black; */
+    }
+
+    .container h3{
+        font-size:20px;
+        margin:0;
+        padding:0;
+    }
+
+    .container p{
+        font-size:13px;
+        line-height: 2rem;
+    }
+
+    .purple-like{
+        display: flex;
+        padding:0;
+        margin:70px 0;
+        background-image: none;
+        top:70px;
+    }
+
+    .purple-like h3{
+        font-size:25px;
+    }
+
+    .purple-like section{
+        width:100%;
+        text-align: left;
+        padding:89px 40px 87px 580px;
+    }
+
+    .container .phone{
+        position: absolute;
+        top:-70px;
+        left:70px;
+        width:50%;
+    }
+
+    .container .containerflex-laptop{
+        padding:150px 0 0;
+    }
+    .container .containerflex-laptop .desklaptop{
+        position: absolute;
+        left:-220px;
+    }
+
+    .container .containerflex-laptop h3{
+        margin:0;
+        padding:20px 0;
+    }
+
+    .container .containerflex-laptop section{
+        position: relative;
+        left:250px;
+    }
+
+    footer,
+    .footersection{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding:30px;
+    }
+    
+
+    .footersection section{
+        margin:0 130px 0 0;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .head{
+        padding:30px 20px 70px 100px;
+    }
+
+    .hamburger-content{
+        left:-50px;
+    }
+
+    aside{
+        padding:0 0 0 250px;
+    }
+
+    .container .containerflex section{
+        left: -300px;
+        padding:30px 0;
+        width:580px;
+    }
+
+    .container .containerflex h3{
+        padding:20px 0;
+    }
+
+    .container .containerflex p{
+        font-size:18px;
+    }
+
+    .container .containerflex .deskeditor{
+        right:-250px;
+        width:60%;
+    }
+
+    .purple-like .phone{
+        top:-100px;
+    }
+
+    .purple-like section{
+        padding:155px 70px 80px 800px;
+    }
+
+    .purple-like h3{
+        font-size: 30px;
+        padding:20px 0;
+    }
+
+    .purple-like p{
+        font-size: 15px;
+    }
+
+    .container .containerflex-laptop .desklaptop{
+        width:70%;
+        left:-280px;
+    }
+    
+    .container .containerflex-laptop section{
+        left:300px;
+    }
+
+    footer{
+        margin:80px 0 0;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .hamburger-content{
+        left:-130px;
+    }
+
+    .container .containerflex-edit .deskeditor{
+        right:-280px;
+    }
+
+    .purple-like{
+        padding:35px 0 35px;
+    }
+
+    .container .containerflex-laptop .desklaptop{
+        left:-300px;
+    }
+}
